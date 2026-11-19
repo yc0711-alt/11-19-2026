@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b70">
+<meta name="description" content="계절을 입다, 일상을 더 특별하게. 찬예웨스트에서 나만의 스타일을 찾아보세요.">
+<meta property="og:title" content="찬예웨스트 | 계절을 입다">
+<meta property="og:description" content="봄부터 겨울까지, 오늘의 나에게 어울리는 옷">
+<title>찬예웨스트 | 계절을 입다</title>
+<style>
+:root{--navy:#173b70;--blue:#2f65aa;--sky:#eaf3ff;--pale:#f5f8fd;--ink:#17243a;--muted:#718096;--line:#e4ebf4;--white:#fff;--shadow:0 12px 35px #173b7012}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;background:#fff}button,input,select{font:inherit}button{cursor:pointer;border:0}.topline{background:var(--navy);color:#fff;text-align:center;padding:8px 16px;font-size:12px}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head{height:76px;display:flex;align-items:center;gap:24px}.logo{font-size:25px;font-weight:900;letter-spacing:-1.5px;color:var(--navy);white-space:nowrap}.logo small{display:block;font-size:9px;letter-spacing:3px;text-align:center;margin-top:-4px;color:#7890b2}
+.search{flex:1;max-width:450px;margin:auto;position:relative}.search input{width:100%;border:1px solid #d8e2f0;background:#f8fbff;border-radius:30px;padding:12px 44px 12px 18px;outline:none}.search button{position:absolute;right:8px;top:5px;background:transparent;color:var(--navy);font-size:20px}
+.head-actions{display:flex;gap:18px}.head-actions button{background:none;color:var(--navy);font-size:12px}.head-actions b{display:block;font-size:19px}
+nav{border-top:1px solid #f0f3f8}.navin{height:48px;display:flex;align-items:center;justify-content:space-between;gap:15px}.navin a{color:#243b5d;text-decoration:none;font-size:14px;font-weight:700}.navin a:hover{color:#4b83cc}
+main{padding-bottom:60px}.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:14px;margin-top:18px}.hero-main{height:350px;border-radius:20px;overflow:hidden;position:relative;background:#dceaff}.hero-main img{width:100%;height:100%;object-fit:cover}.hero-copy{position:absolute;left:36px;top:45px;color:white;text-shadow:0 2px 12px #1c355b66}.hero-copy h1{font-size:37px;line-height:1.25;margin:0 0 12px;letter-spacing:-2px}.hero-copy p{font-size:16px}.pill{border-radius:30px;background:white;color:var(--navy);padding:11px 20px;font-weight:800}
+.seasons{display:grid;grid-template-columns:1fr 1fr;gap:12px}.season{height:169px;position:relative;overflow:hidden;border-radius:17px;background:#dce9f8;color:#fff}.season img{width:100%;height:100%;object-fit:cover;filter:brightness(.83)}.season span{position:absolute;left:17px;top:18px;font-size:23px;font-weight:900;text-shadow:0 2px 8px #0005}.season small{display:block;font-size:11px;font-weight:500}
+.benefits{display:grid;grid-template-columns:1fr 1fr 1.35fr 1fr;gap:10px;margin:16px 0 30px}.benefit{background:var(--pale);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;align-items:center;gap:12px;font-size:13px}.benefit strong{color:var(--blue);font-size:16px}.benefit .ico{font-size:24px}
+.section{margin:34px 0}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:16px}.section h2{font-size:24px;margin:0;letter-spacing:-1px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.more{color:var(--blue);font-weight:700;background:none}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;background:white}.product:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.prodimg{height:245px;background:#f2f5fa;position:relative}.prodimg img{width:100%;height:100%;object-fit:cover}.heart{position:absolute;right:12px;top:10px;border-radius:50%;width:34px;height:34px;background:#fff;color:#426b9f;font-size:18px}.prodinfo{padding:13px}.prodinfo h3{font-size:14px;margin:0 0 7px}.price{font-weight:900}.old{color:#aab3c0;text-decoration:line-through;font-size:12px;margin-left:7px}.rating{font-size:12px;color:#d69a20;margin-top:6px}.buyrow{display:flex;gap:7px;margin-top:12px}.buyrow button{flex:1;padding:9px;border-radius:8px;background:#eef4fc;color:var(--navy);font-weight:700;font-size:12px}.buyrow button.primary{background:var(--navy);color:white}
+.tools-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}.tool-card{background:linear-gradient(135deg,#eff6ff,#e1edff);border-radius:20px;padding:22px;display:flex;align-items:center;gap:18px;min-height:225px;overflow:hidden}.tool-card img{width:46%;height:185px;object-fit:cover;border-radius:13px}.tool-card h3{font-size:21px;margin:0 0 8px}.tool-card p{font-size:13px;color:#526782;line-height:1.6}.primary{background:var(--navy);color:white;border-radius:9px;padding:11px 18px;font-weight:800}
+.ai-panel{background:#f5f8fd;border:1px solid var(--line);border-radius:18px;padding:22px}.ai-panel h3{margin:0 0 5px}.ai-panel p{font-size:13px;color:var(--muted);margin:0 0 14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fields label{font-size:12px;color:#60718a}.fields input,.fields select,.modal input,.modal select{width:100%;padding:11px;border:1px solid #dce5f0;border-radius:9px;margin-top:5px;background:white}.fields .wide{grid-column:1/-1}
+.promo{background:var(--navy);color:white;border-radius:18px;padding:24px;display:flex;justify-content:space-between;align-items:center;margin:30px 0}.promo h2{margin:0 0 5px}.promo p{margin:0;color:#dbe8fb;font-size:13px}
+footer{background:#f5f8fc;border-top:1px solid var(--line);padding:35px 0;color:#66758b;font-size:12px}.footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlogo{font-size:22px;color:var(--navy);font-weight:900}
+.overlay{display:none;position:fixed;inset:0;background:#0d1d35a6;z-index:50;align-items:center;justify-content:center;padding:18px}.overlay.show{display:flex}.modal{background:white;border-radius:20px;width:min(560px,100%);max-height:90vh;overflow:auto;padding:25px;box-shadow:0 25px 80px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modal-head h2{margin:0;font-size:22px}.close{background:#eef3fa;border-radius:50%;width:34px;height:34px;font-size:20px;color:var(--navy)}.modal-actions{display:flex;gap:8px;margin-top:15px}.modal-actions button{flex:1}.tabs{display:flex;gap:8px;margin-bottom:16px}.tabs button{background:#eff4fb;padding:9px 16px;border-radius:9px;color:var(--navy)}.tabs button.active{background:var(--navy);color:white}
+.cart-line{display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);align-items:center;font-size:13px}.qty button{background:#edf3fb;border-radius:5px;padding:3px 8px}.total{display:flex;justify-content:space-between;padding:8px 0}.total.final{font-size:19px;font-weight:900;color:var(--navy);border-top:1px solid var(--line);margin-top:8px;padding-top:15px}
+.man-body{display:grid;grid-template-columns:1fr 1fr;gap:18px}.mannequin{background:linear-gradient(#eff6ff,#dce9f8);border-radius:15px;min-height:280px;display:flex;align-items:center;justify-content:center;position:relative}.mannequin .silhouette{font-size:130px;filter:grayscale(1);opacity:.65}.mannequin .wear{position:absolute;top:95px;font-size:75px}.choice{display:flex;gap:8px;flex-wrap:wrap}.choice button{padding:9px 12px;background:#eef4fc;border-radius:9px;color:var(--navy)}.choice button.selected{background:var(--navy);color:white}
+.notice{font-size:12px;color:#78869a;line-height:1.6;margin-top:10px}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#172f53;color:white;padding:12px 20px;border-radius:30px;z-index:100;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1}
+@media(max-width:800px){.wrap{padding:0 14px}.head{height:auto;min-height:68px;gap:10px;flex-wrap:wrap;padding:12px 0}.logo{font-size:20px}.search{order:3;flex-basis:100%;max-width:none}.head-actions{margin-left:auto;gap:8px}.navin{overflow:auto;justify-content:flex-start}.navin a{white-space:nowrap}.hero{grid-template-columns:1fr}.hero-main{height:280px}.seasons{grid-template-columns:repeat(4,1fr)}.season{height:115px}.season span{font-size:16px;left:9px;top:10px}.benefits{grid-template-columns:1fr 1fr}.products{grid-template-columns:repeat(2,1fr);gap:10px}.prodimg{height:190px}.tools-grid{grid-template-columns:1fr}.tool-card{min-height:180px}.tool-card img{height:145px}.promo{gap:12px}.man-body{grid-template-columns:1fr}}
+@media(max-width:480px){.hero-copy{left:20px;top:25px}.hero-copy h1{font-size:27px}.hero-main{height:230px}.seasons{grid-template-columns:1fr 1fr}.season{height:115px}.benefit{padding:11px;font-size:11px}.benefit strong{font-size:13px}.prodimg{height:165px}.section h2{font-size:20px}.fields{grid-template-columns:1fr}.fields .wide{grid-column:auto}.tool-card{padding:15px}.tool-card h3{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="topline">🚚 오늘 주문하면 빠르게! 새벽배송 선택 시 배송비 +1,500원</div>
+<header>
+ <div class="wrap head">
+  <a class="logo" href="#" style="text-decoration:none">찬예웨스트<small>CHANYE WEST</small></a>
+  <div class="search"><input id="searchInput" placeholder="찾고 싶은 상품을 검색해보세요"><button onclick="searchProducts()">⌕</button></div>
+  <div class="head-actions">
+   <button onclick="openAccount()"><b>♙</b>마이페이지</button>
+   <button onclick="openModal('wishlistModal')"><b>♡</b>관심상품</button>
+   <button onclick="openCart()"><b>🛒 <span id="cartCount">0</span></b>장바구니</button>
+  </div>
+ </div>
+ <nav><div class="wrap navin">
+  <a href="#products">전체 카테고리</a><a href="#spring">봄</a><a href="#summer">여름</a><a href="#autumn">가을</a><a href="#winter">겨울</a><a href="#products">베스트</a><a href="#styling">코디추천</a><a href="#ai">AI 스타일</a>
+ </div></nav>
+</header>
+<main class="wrap">
+ <section class="hero">
+  <div class="hero-main"><img src="img/hero-spring.jpg" alt="봄 시즌 패션 화보"><div class="hero-copy"><h1>계절을 입다,<br>일상을 더 특별하게</h1><p>찬예웨스트와 함께 찾는 오늘의 스타일</p><button class="pill" onclick="document.querySelector('#products').scrollIntoView()">신상품 보러가기 →</button></div></div>
+  <div class="seasons">
+   <a class="season" id="spring" href="#spring-products"><img src="img/spring.jpg" alt="봄 벚꽃"><span>봄<small>Spring · 산뜻한 파스텔</small></span></a>
+   <a class="season" id="summer" href="#summer-products"><img src="img/summer.jpg" alt="여름 바다"><span>여름<small>Summer · 시원한 컬러</small></span></a>
+   <a class="season" id="autumn" href="#autumn-products"><img src="img/autumn.jpg" alt="가을 단풍"><span>가을<small>Autumn · 따뜻한 어스톤</small></span></a>
+   <a class="season" id="winter" href="#winter-products"><img src="img/winter.jpg" alt="겨울 설경"><span>겨울<small>Winter · 포근한 뉴트럴</small></span></a>
+  </div>
+ </section>
+ <section class="benefits">
+  <div class="benefit"><span class="ico">🎟️</span><div><strong>5만원 이상 구매</strong><br>5,000원 할인 쿠폰</div></div>
+  <div class="benefit"><span class="ico">🎁</span><div><strong>10만원 이상 구매</strong><br>10,000원 할인 쿠폰</div></div>
+  <div class="benefit"><span class="ico">💎</span><div><strong>회원 등급 포인트</strong><br>구매 누적에 따라 최대 10만원</div></div>
+  <div class="benefit"><span class="ico">🌙</span><div><strong>새벽배송</strong><br>추가 배송비 1,500원</div></div>
+ </section>
+ <section class="section" id="membership">
+  <div class="section-head"><div><h2>💎 구매할수록 커지는 멤버십 포인트</h2><p>누적 구매 금액에 따라 등급별 포인트 혜택을 드려요.</p></div></div>
+  <div style="border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff">
+   <div style="display:grid;grid-template-columns:repeat(6,1fr);background:#edf4ff;text-align:center;font-size:12px;font-weight:800;color:var(--navy)">
+    <div style="padding:13px 4px">10만원 이상</div><div style="padding:13px 4px">20만원 이상</div><div style="padding:13px 4px">30만원 이상</div><div style="padding:13px 4px">40만원 이상</div><div style="padding:13px 4px">50만원 이상</div><div style="padding:13px 4px">100만원 이상</div>
+   </div>
+   <div style="display:grid;grid-template-columns:repeat(6,1fr);text-align:center;font-size:14px;font-weight:900;color:#2f65aa">
+    <div style="padding:15px 4px">10,000P</div><div style="padding:15px 4px">20,000P</div><div style="padding:15px 4px">30,000P</div><div style="padding:15px 4px">40,000P</div><div style="padding:15px 4px">50,000P</div><div style="padding:15px 4px">100,000P</div>
+   </div>
+  </div>
+  <p class="notice">누적 구매액 기준의 등급 혜택 예시입니다. 데모에서는 주문 완료 시 등급 달성 포인트를 반영합니다.</p>
+ </section>
+ <section class="section" id="products">
+  <div class="section-head"><div><h2>지금 가장 사랑받는 아이템 💙</h2><p>매일 입고 싶은 데일리 웨어를 만나보세요.</p></div><button class="more" onclick="showToast('전체 상품을 보고 있어요')">전체보기 →</button></div>
+  <div class="products" id="productGrid">
+   <article class="product" data-name="오버핏 맨투맨"><div class="prodimg"><img src="img/product-knit.jpg" alt="블루 니트 맨투맨"><button class="heart" onclick="toggleWish(this)">♡</button></div><div class="prodinfo"><h3>오버핏 맨투맨</h3><span class="price">29,000원</span><div class="rating">★ 4.9 (124)</div><div class="buyrow"><button onclick="addToCart(1)">장바구니</button><button class="primary" onclick="buyNow(1)">구매하기</button></div></div></article>
+   <article class="product" data-name="베이직 후드티"><div class="prodimg"><img src="img/product-hoodie.jpg" alt="베이직 후드티"><button class="heart" onclick="toggleWish(this)">♡</button></div><div class="prodinfo"><h3>베이직 후드티</h3><span class="price">39,000원</span><div class="rating">★ 4.8 (98)</div><div class="buyrow"><button onclick="addToCart(2)">장바구니</button><button class="primary" onclick="buyNow(2)">구매하기</button></div></div></article>
+   <article class="product" data-name="데님 자켓"><div class="prodimg"><img src="img/product-jacket.jpg" alt="데님 자켓"><button class="heart" onclick="toggleWish(this)">♡</button></div><div class="prodinfo"><h3>데님 자켓</h3><span class="price">59,000원</span><div class="rating">★ 4.9 (73)</div><div class="buyrow"><button onclick="addToCart(3)">장바구니</button><button class="primary" onclick="buyNow(3)">구매하기</button></div></div></article>
+   <article class="product" data-name="와이드 데님 팬츠"><div class="prodimg"><img src="img/product-pants.jpg" alt="와이드 데님 팬츠"><button class="heart" onclick="toggleWish(this)">♡</button></div><div class="prodinfo"><h3>와이드 데님 팬츠</h3><span class="price">49,000원</span><div class="rating">★ 4.8 (61)</div><div class="buyrow"><button onclick="addToCart(4)">장바구니</button><button class="primary" onclick="buyNow(4)">구매하기</button></div></div></article>
+  </div>
+ </section>
+ <section class="section" id="styling">
+  <div class="section-head"><div><h2>나만의 코디를 완성해요</h2><p>함께 입으면 더 예쁜 아이템을 추천해드려요.</p></div></div>
+  <div class="tools-grid">
+   <div class="tool-card"><div><h3>마네킹 피팅룸</h3><p>원하는 상의와 하의를 골라<br>나만의 코디를 미리 조합해보세요.</p><button class="primary" onclick="openModal('tryModal')">피팅 시작하기 →</button></div><img src="img/tryon.jpg" alt="가상 피팅룸"></div>
+   <div class="ai-panel" id="ai"><h3>✨ AI 맞춤 스타일 추천</h3><p>키, 몸무게, 얼굴형과 선호 계절을 입력하면 어울리는 스타일을 제안해요.</p>
+    <div class="fields"><label>키 (cm)<input type="number" id="height" placeholder="예: 175"></label><label>몸무게 (kg)<input type="number" id="weight" placeholder="예: 68"></label><label>얼굴형<select id="face"><option value="">선택해주세요</option><option>계란형</option><option>둥근형</option><option>각진형</option><option>긴형</option><option>하트형</option></select></label><label>선호 계절<select id="season"><option>봄</option><option>여름</option><option>가을</option><option>겨울</option></select></label><label class="wide">원하는 분위기<select id="mood"><option>편안한 데일리</option><option>미니멀</option><option>캐주얼</option><option>댄디</option><option>스트릿</option></select></label></div>
+    <button class="primary" style="width:100%;margin-top:13px" onclick="recommendStyle()">내 스타일 추천받기</button><p id="aiResult" class="notice" aria-live="polite"></p>
+   </div>
+  </div>
+ </section>
+ <section class="section" id="spring-products"><div class="section-head"><div><h2>🌸 봄, 가볍고 산뜻하게</h2><p>파스텔 셔츠와 가벼운 아우터로 완성하는 봄 코디</p></div></div><div class="promo" style="background:#e9b6c7;color:#59364a"><div><h2>SPRING COLLECTION</h2><p style="color:#704b5e">새로운 계절, 새로운 나를 만나보세요.</p></div><button class="pill" onclick="showToast('봄 컬렉션을 선택했어요')">봄 상품 보기 →</button></div></section>
+ <section class="section" id="summer-products"><div class="section-head"><div><h2>☀️ 여름, 시원하고 가볍게</h2><p>통기성 좋은 티셔츠와 린넨 아이템</p></div></div><div class="promo" style="background:#d9eff7;color:#1b5573"><div><h2>SUMMER COLLECTION</h2><p style="color:#47788f">청량한 블루로 여름을 채워보세요.</p></div><button class="pill" onclick="showToast('여름 컬렉션을 선택했어요')">여름 상품 보기 →</button></div></section>
+ <section class="section" id="autumn-products"><div class="section-head"><div><h2>🍂 가을, 분위기 있게</h2><p>브라운과 베이지, 니트로 즐기는 가을</p></div></div><div class="promo" style="background:#ead2b5;color:#684b31"><div><h2>AUTUMN COLLECTION</h2><p style="color:#80664d">차분한 색감으로 깊어지는 스타일.</p></div><button class="pill" onclick="showToast('가을 컬렉션을 선택했어요')">가을 상품 보기 →</button></div></section>
+ <section class="section" id="winter-products"><div class="section-head"><div><h2>❄️ 겨울, 따뜻하고 포근하게</h2><p>두툼한 아우터와 포근한 니트웨어</p></div></div><div class="promo" style="background:#dce6f3;color:#24466d"><div><h2>WINTER COLLECTION</h2><p style="color:#58718f">따뜻함과 스타일을 모두 잡다.</p></div><button class="pill" onclick="showToast('겨울 컬렉션을 선택했어요')">겨울 상품 보기 →</button></div></section>
+ <div class="promo"><div><h2>찬예웨스트 멤버십 💙</h2><p>회원가입하고 포인트와 쿠폰 혜택을 누려보세요.</p></div><button class="pill" onclick="openModal('accountModal')">회원가입 / 로그인</button></div>
+</main>
+<footer><div class="wrap footrow"><div><div class="footlogo">찬예웨스트</div><p>계절을 입다, 일상을 더 특별하게.</p></div><div><b>고객센터</b><p>평일 10:00 - 17:00 · 점심 12:00 - 13:00</p><p>이메일: help@chanyewest.example</p></div><div><b>안내</b><p>이용약관　개인정보처리방침　배송/교환/반품</p><p>© 2026 CHANYE WEST. DEMO STORE.</p></div></div></footer>
+
+<div class="overlay" id="accountModal"><div class="modal"><div class="modal-head"><h2>찬예웨스트 회원</h2><button class="close" onclick="closeModal('accountModal')">×</button></div><div class="tabs"><button class="active" onclick="switchAccount('login',this)">로그인</button><button onclick="switchAccount('signup',this)">회원가입</button></div><div id="accountFields"><input id="loginId" placeholder="아이디 또는 이메일"><input id="loginPw" type="password" placeholder="비밀번호" style="margin-top:10px"><button class="primary" style="width:100%;margin-top:14px" onclick="login()">로그인</button></div><p class="notice">데모 사이트입니다. 입력한 계정 정보는 이 브라우저에만 저장되며 실제 인증 서버와 연결되어 있지 않습니다.</p></div></div>
+<div class="overlay" id="cartModal"><div class="modal"><div class="modal-head"><h2>장바구니</h2><button class="close" onclick="closeModal('cartModal')">×</button></div><div id="cartLines"></div><div class="total"><span>상품 금액</span><b id="subtotal">0원</b></div><div class="total"><span>쿠폰 할인</span><b id="discount">0원</b></div><div class="total"><span>배송비</span><b id="shipping">0원</b></div><label style="display:block;margin:12px 0;font-size:13px"><input type="checkbox" id="dawn" onchange="renderCart()"> 새벽배송 선택 (+1,500원)</label><div class="total final"><span>결제 예정 금액</span><b id="grandTotal">0원</b></div><div class="modal-actions"><button class="primary" onclick="checkout()">주문 / 결제하기</button></div><p class="notice">실제 카드·간편결제는 PG사 계약 및 서버 연동 후 사용할 수 있습니다.</p></div></div>
+<div class="overlay" id="tryModal"><div class="modal"><div class="modal-head"><h2>마네킹 피팅룸</h2><button class="close" onclick="closeModal('tryModal')">×</button></div><div class="man-body"><div class="mannequin"><span class="silhouette">♙</span><span class="wear" id="manTop">👕</span></div><div><b>상의 선택</b><div class="choice" style="margin:8px 0 18px"><button class="selected" onclick="pickWear('top','👕',this)">티셔츠</button><button onclick="pickWear('top','🧥',this)">자켓</button><button onclick="pickWear('top','🧶',this)">니트</button></div><b>하의 선택</b><div class="choice" style="margin:8px 0 18px"><button class="selected" onclick="pickWear('bottom','👖',this)">데님</button><button onclick="pickWear('bottom','🩳',this)">쇼츠</button><button onclick="pickWear('bottom','👔',this)">슬랙스</button></div><p class="notice">상의와 하의 아이콘으로 코디 조합을 미리 확인하는 데모 기능입니다.</p></div></div></div></div>
+<div class="overlay" id="wishlistModal"><div class="modal"><div class="modal-head"><h2>관심상품</h2><button class="close" onclick="closeModal('wishlistModal')">×</button></div><p>상품 카드의 하트 ♡ 를 눌러 관심상품을 표시해보세요.</p></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const catalog=[{id:1,name:'오버핏 맨투맨',price:29000},{id:2,name:'베이직 후드티',price:39000},{id:3,name:'데님 자켓',price:59000},{id:4,name:'와이드 데님 팬츠',price:49000}];
+let cart=JSON.parse(localStorage.getItem('cw_cart')||'[]'), user=JSON.parse(localStorage.getItem('cw_user')||'null'), accountMode='login';
+const won=n=>n.toLocaleString('ko-KR')+'원';
+function saveCart(){localStorage.setItem('cw_cart',JSON.stringify(cart));document.getElementById('cartCount').textContent=cart.reduce((a,b)=>a+b.qty,0)}
+function addToCart(id){let item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});saveCart();showToast('장바구니에 담았어요!');}
+function buyNow(id){addToCart(id);openCart()}
+function openModal(id){document.getElementById(id).classList.add('show')}
+function closeModal(id){document.getElementById(id).classList.remove('show')}
+function showToast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2100)}
+function openCart(){renderCart();openModal('cartModal')}
+function renderCart(){
+ let box=document.getElementById('cartLines'),sub=cart.reduce((s,x)=>s+catalog.find(p=>p.id===x.id).price*x.qty,0);
+ box.innerHTML=cart.length?cart.map(x=>{let p=catalog.find(p=>p.id===x.id);return `<div class="cart-line"><span><b>${p.name}</b><br>${won(p.price)}</span><span class="qty"><button onclick="changeQty(${x.id},-1)">−</button> ${x.qty} <button onclick="changeQty(${x.id},1)">+</button></span><b>${won(p.price*x.qty)}</b></div>`}).join(''):'<p>장바구니가 비어 있어요.</p>';
+ let discount=sub>=100000?10000:sub>=50000?5000:0,ship=document.getElementById('dawn').checked?1500:0;
+ document.getElementById('subtotal').textContent=won(sub);document.getElementById('discount').textContent='-'+won(discount);document.getElementById('shipping').textContent=won(ship);document.getElementById('grandTotal').textContent=won(Math.max(0,sub-discount+ship));
+}
+function changeQty(id,d){let x=cart.find(x=>x.id===id);if(x){x.qty+=d;if(x.qty<=0)cart=cart.filter(y=>y.id!==id)}saveCart();renderCart()}
+function checkout(){
+ if(!cart.length){showToast('상품을 먼저 담아주세요');return}
+ let sub=cart.reduce((sum,x)=>sum+catalog.find(p=>p.id===x.id).price*x.qty,0);
+ let discount=sub>=100000?10000:sub>=50000?5000:0,ship=document.getElementById('dawn').checked?1500:0;
+ let paid=Math.max(0,sub-discount+ship);
+ if(user){
+  user.total=(user.total||0)+paid;
+  let tiers=[{min:100000,points:10000},{min:200000,points:20000},{min:300000,points:30000},{min:400000,points:40000},{min:500000,points:50000},{min:1000000,points:100000}];
+  let earned=0;tiers.forEach(t=>{if(user.total>=t.min)earned=t.points});
+  let previous=user.tierPointsPaid||0;
+  if(earned>previous){user.points=(user.points||0)+(earned-previous);user.tierPointsPaid=earned;}
+  localStorage.setItem('cw_user',JSON.stringify(user));
+ }
+ cart=[];saveCart();renderCart();
+ showToast('데모 주문이 완료됐어요! 실제 결제 연동은 별도 개발이 필요해요.');
+}
+function switchAccount(mode,btn){accountMode=mode;document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');let box=document.getElementById('accountFields');box.innerHTML=mode==='login'?'<input id="loginId" placeholder="아이디 또는 이메일"><input id="loginPw" type="password" placeholder="비밀번호" style="margin-top:10px"><button class="primary" style="width:100%;margin-top:14px" onclick="login()">로그인</button>':'<input id="newName" placeholder="이름"><input id="newId" placeholder="아이디" style="margin-top:9px"><input id="newPw" type="password" placeholder="비밀번호" style="margin-top:9px"><button class="primary" style="width:100%;margin-top:14px" onclick="signup()">가입하고 5,000P 받기</button>'}
+function signup(){let name=document.getElementById('newName').value,id=document.getElementById('newId').value,pw=document.getElementById('newPw').value;if(!name||!id||!pw){showToast('모든 항목을 입력해주세요');return}user={name,id,pw,points:5000,total:0};localStorage.setItem('cw_user',JSON.stringify(user));showToast('가입 완료! 5,000P가 지급됐어요');closeModal('accountModal')}
+function login(){let id=document.getElementById('loginId').value,pw=document.getElementById('loginPw').value;if(user&&id===user.id&&pw===user.pw){showToast(user.name+'님 환영합니다');closeModal('accountModal')}else showToast('데모 계정이 없거나 정보가 맞지 않아요. 먼저 가입해주세요')}
+function openAccount(){openModal('accountModal')}
+function toggleWish(btn){btn.textContent=btn.textContent==='♡'?'♥':'♡';btn.style.color=btn.textContent==='♥'?'#e56b88':'#426b9f';showToast(btn.textContent==='♥'?'관심상품에 추가했어요':'관심상품에서 삭제했어요')}
+function pickWear(type,emoji,btn){let target=document.getElementById(type==='top'?'manTop':'manBottom');if(!target){target=document.createElement('span');target.id='manBottom';target.className='wear';target.style.top='175px';document.querySelector('.mannequin').appendChild(target)}target.textContent=emoji;btn.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected')}
+function recommendStyle(){let h=+document.getElementById('height').value,w=+document.getElementById('weight').value,face=document.getElementById('face').value,season=document.getElementById('season').value,mood=document.getElementById('mood').value;if(!h||!w||!face){showToast('키, 몸무게, 얼굴형을 입력해주세요');return}let fit=h>=178?'세미오버핏 상의와 스트레이트 팬츠':h<=168?'기장이 짧은 상의와 하이웨이스트 팬츠':'레귤러핏 상의와 와이드 팬츠';let faceTip=face==='둥근형'?'브이넥이나 카라 디테일':face==='각진형'?'부드러운 라운드넥과 자연스러운 실루엣':'얼굴형을 살리는 깔끔한 넥라인';document.getElementById('aiResult').textContent=`추천 스타일: ${season} ${mood}. ${fit}를 추천해요. ${faceTip}을 더하면 좋아요. (입력 정보 기반의 참고용 추천입니다.)`}
+function searchProducts(){let q=document.getElementById('searchInput').value.trim().toLowerCase();let cards=[...document.querySelectorAll('.product')];let count=0;cards.forEach(c=>{let show=c.dataset.name.toLowerCase().includes(q);c.style.display=show?'':'none';if(show)count++});showToast(q?(count?`${count}개 상품을 찾았어요`:'검색 결과가 없어요'):'전체 상품을 보여드려요')}
+document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchProducts()});
+saveCart();
+</script>
+</body></html>
